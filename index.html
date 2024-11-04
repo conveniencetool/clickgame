@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>円クリックゲーム</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSSファイルの読み込み -->
+</head>
+<body>
+    <div id="startScreen">
+        <h1>円クリックゲーム</h1>
+        <p>スペースキーまたは下のボタンでスタート!</p>
+        <button id="startButton" onclick="startGame()">ゲーム開始</button>
+    </div>
+    <div id="score">スコア: 0</div>
+    <div id="timer">タイマー: 1.00秒</div>
+    <div id="gameArea">
+        <div id="circle"></div>
+    </div>
+    <div id="gameOver">ゲームオーバー!</div>
+    <div id="finalScore" style="display: none; font-size: 24px; margin-top: 20px;">最終スコア: 0</div>
+    <button id="continueButton" onclick="continueGame()">コンティニュー</button>
+    <div id="analysis"></div>
+
+    <script src="script.js"></script> <!-- JavaScriptファイルの読み込み -->
+</body>
+</html>
